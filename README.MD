@@ -71,4 +71,4 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 ## Contact
 
-Thomas Percival – [thomaspercival@live.co.uk](Email) – [https://linkedin.com/in/thomaspercival](LinkedIn)
+Thomas Percival – [thomaspercival@live.co.uk]– [https://linkedin.com/in/thomaspercival]
