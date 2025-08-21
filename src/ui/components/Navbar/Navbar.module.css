@@ -1,0 +1,97 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 2.5rem; 
+    background-color: var(--color-white);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--color-border-subtle); 
+  }
+  
+  .navbarBrand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; 
+  }
+  
+  .logoIcon {
+    font-size: 2rem; 
+    color: var(--color-accent-blue);
+    line-height: 1; 
+  }
+  
+  .logoText {
+    font-size: 1.5rem; 
+    font-weight: 700;
+    color: var(--color-text-heading);
+  }
+  
+  .navbarNav {
+    display: flex;
+    gap: 1.8rem; 
+  }
+  
+  .navLink {
+    color: var(--color-text-body);
+    text-decoration: none;
+    font-weight: 600; 
+    font-size: 1rem; 
+    padding: 0.5rem 0.2rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    position: relative; 
+  }
+  
+  .navLink:hover {
+    color: var(--color-accent-blue);
+  }
+  
+  .navLink.active {
+    color: var(--color-accent-blue);
+
+  }
+  
+  .navLink.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-accent-blue);
+    border-radius: 2px;
+  }
+  
+  /* Responsive adjustments for Navbar */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 1rem 1.5rem;
+      gap: 1rem;
+    }
+  
+    .navbarNav {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem 1.25rem; 
+    }
+  
+    .logoText {
+      font-size: 1.3rem;
+    }
+  
+    .logoIcon {
+      font-size: 1.7rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 0.75rem 1rem;
+    }
+    .navLink {
+      font-size: 0.9rem;
+    }
+  }
