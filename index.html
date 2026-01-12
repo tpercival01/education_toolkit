@@ -2,31 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Aletheia | AI Detection Framework</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Aletheia Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo">ALETHEIA</a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="quiz.html">Test Yourself</a>
-        </nav>
+        <div class="logo">ALETHEIA <span style="font-weight:normal; font-size: 0.8em; color:#94a3b8;">ACADEMY</span></div>
+        <div class="user-stats">
+            <span id="xp-text">0% Mastery</span>
+        </div>
     </header>
-    <section class="hero">
-        <h1>Demystifying Synthetic Media.</h1>
-        <p>A browser-integrated framework for the real-time detection of Large Language Model output.</p>
-        <a href="quiz.html" class="btn">Start Learning</a>
-    </section>
+
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div id="progress-fill" style="width: 0%;"></div>
+        </div>
+    </div>
+
     <div class="container">
-        <div class="card">
-            <h2>How It Works</h2>
-            <p>Aletheia utilizes a client-side DistilBERT architecture, fine-tuned on over 120,000 samples of human and synthetic text. By analyzing token probability distributions and perplexity, the system identifies patterns characteristic of Transformer-based generation.</p>
+        <h1>Curriculum</h1>
+        
+        <!-- MODULE 1: TEXT -->
+        <div class="card" id="card-text">
+            <div class="card-header">
+                <h2>1. LLMs & Transformers </h2>
+                <span class="status">IN PROGRESS</span>
+            </div>
+            <p>Understand how LLMs like GPT-4 predict the next token, and why they hallucinate.</p>
+            <a href="module_text.html" class="btn">Start Module</a>
         </div>
-        <div class="card">
-            <h2>Privacy First</h2>
-            <p>Unlike other detectors, Aletheia runs entirely in your browser using WebAssembly. No data is ever sent to a remote server.</p>
+
+        <!-- MODULE 2: IMAGES -->
+        <div class="card" id="card-image">
+            <div class="card-header">
+                <h2>2. Diffusion & Visual Artifacts</h2>
+                <span class="status">LOCKED</span>
+            </div>
+            <p>Learn to spot six-fingered hands, glossy textures, and inconsistent lighting in AI art.</p>
+            <a href="#" class="btn" onclick="alert('Coming soon in v2.0');">Start Module</a>
         </div>
+        
+         <!-- MODULE 3: AUDIO/DEEPFAKES -->
+        <div class="card" id="card-audio">
+            <div class="card-header">
+                <h2>3. Audio & Deepfakes</h2>
+                <span class="status">LOCKED</span>
+            </div>
+            <p>Identify synthetic prosody, lack of breaths, and metallic frequencies in AI voice clones.</p>
+            <a href="#" class="btn" onclick="alert('Coming soon in v2.0');">Start Module</a>
+        </div>
+
+        <!-- MODULE 4: VIDEO/DEEPFAKES -->
+        <div class="card" id="card-audio">
+            <div class="card-header">
+                <h2>4. Video & Deepfakes</h2>
+                <span class="status">LOCKED</span>
+            </div>
+            <p></p>
+            <a href="#" class="btn" onclick="alert('Coming soon in v2.0');">Start Module</a>
+        </div>
+
+        <button onclick="localStorage.clear(); location.reload();" style="margin-top:2rem; background:transparent; border:1px solid #ef4444; color:#ef4444; padding:5px 10px; cursor:pointer;">Reset Progress (Debug)</button>
     </div>
 </body>
 </html>

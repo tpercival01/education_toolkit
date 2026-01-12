@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module 1: Text</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
+    <script src="quiz.js"></script>
+</head>
+<body>
+    <header><a href="index.html" class="logo">← Back to Dashboard</a></header>
+    
+    <div class="container">
+        <h1>Understanding LLMs</h1>
+        <p>Large Language Models (LLMs) do not "think". They calculate probabilities...</p>
+        <!-- PASTE YOUR LIT REVIEW CONTENT HERE -->
+        
+        <hr class="divider">
+        
+        <h2>Assessment</h2>
+        <div class="quiz-box">
+            <p><strong>Identify the AI generated text:</strong></p>
+            
+            <button class="option" onclick="checkAnswer(this, false, 'text')">
+                "Honestly idk man, looks kinda fake to me lol."
+            </button>
+            
+            <button class="option" onclick="checkAnswer(this, true, 'text')">
+                "Furthermore, it is crucial to delve into the multifaceted implications of this technology."
+            </button>
+            
+            <p class="feedback"></p>
+        </div>
+    </div>
+</body>
+</html>
