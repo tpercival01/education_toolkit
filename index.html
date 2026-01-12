@@ -2,11 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aletheia Toolkit - Homepage</title>
+    <title>Aletheia | AI Detection Framework</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="root"></div>
-    <script type="module" src="src/main.jsx"></script>
+    <header>
+        <a href="index.html" class="logo">ALETHEIA</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="quiz.html">Test Yourself</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Demystifying Synthetic Media.</h1>
+        <p>A browser-integrated framework for the real-time detection of Large Language Model output.</p>
+        <a href="quiz.html" class="btn">Start Learning</a>
+    </section>
+    <div class="container">
+        <div class="card">
+            <h2>How It Works</h2>
+            <p>Aletheia utilizes a client-side DistilBERT architecture, fine-tuned on over 120,000 samples of human and synthetic text. By analyzing token probability distributions and perplexity, the system identifies patterns characteristic of Transformer-based generation.</p>
+        </div>
+        <div class="card">
+            <h2>Privacy First</h2>
+            <p>Unlike other detectors, Aletheia runs entirely in your browser using WebAssembly. No data is ever sent to a remote server.</p>
+        </div>
+    </div>
 </body>
 </html>

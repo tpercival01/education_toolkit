@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aletheia | Turing Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">ALETHEIA</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="quiz.html">Test Yourself</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Can you spot the AI?</h1>
+        <p>Click on the text samples below to reveal the truth.</p>
+        
+        <div class="card" onclick="this.querySelector('.answer').style.display='block'">
+            <p>"The industrial revolution was a period of major industrialization that took place during the late 1700s and early 1800s."</p>
+            <div class="answer ai">RESULT: AI (ChatGPT-4)</div>
+        </div>
+
+        <div class="card" onclick="this.querySelector('.answer').style.display='block'">
+            <p>"lol i literally have no idea what ur talking about but sounds cool i guess"</p>
+            <div class="answer human">RESULT: HUMAN (Reddit)</div>
+        </div>
+
+        <div class="card" onclick="this.querySelector('.answer').style.display='block'">
+            <p>"Furthermore, the implementation of such policies requires a multifaceted approach involving stakeholders from various sectors."</p>
+            <div class="answer ai">RESULT: AI (Claude 3)</div>
+        </div>
+    </div>
+</body>
+</html>
